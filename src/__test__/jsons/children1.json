@@ -1,0 +1,39 @@
+[
+  {
+    "component": "HelloWorld",
+    "props": {
+      "name": {
+        "value": "name 1"
+      }
+    }
+  },
+  {
+    "component": "HelloWorld",
+    "props": {
+      "name": {
+        "value": "name 2"
+      }
+    }
+  },
+  {
+    "component": "Test",
+    "props": {
+      "name": {
+        "value": "name 2"
+      },
+      "number": {
+        "value": 2
+      }
+
+    },
+    "children":
+    {
+      "component": "HelloWorld",
+      "props": {
+        "name": {
+          "value": "name 2"
+        }
+      }
+    }
+  }
+]

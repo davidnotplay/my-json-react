@@ -1,0 +1,19 @@
+{
+  "component": "Test",
+  "props": {
+    "name": {
+      "value": "name 1"
+    },
+    "number": {
+      "value": 3
+    }
+  },
+  "children": {
+    "component": "HelloWorld",
+    "props": {
+      "name": {
+        "value": "name 1"
+      }
+    }
+  }
+}

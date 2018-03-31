@@ -1,0 +1,40 @@
+{
+  "component": "List",
+  "props": {
+    "className": {
+      "value": "class-1"
+    }
+  },
+  "children": [
+    {
+      "component": "Item",
+      "props": {
+        "text": {
+          "value": "text 1"
+        }
+      }
+    },
+    {
+      "component": "Item",
+      "props": {
+        "text": {
+          "value": "text 2"
+        }
+      }
+    },
+    {
+      "component": "Item",
+      "children": {
+        "component": "Link",
+        "props": {
+          "text": {
+            "value": "Link 1"
+          },
+          "url": {
+            "value": "url-1"
+          }
+        }
+      }
+    }
+  ]
+}
