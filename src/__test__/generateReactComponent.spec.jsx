@@ -5,11 +5,12 @@ import generateComponent, {
 }  from '../jsonReact/generateReactComponent'
 import ComponentsSelector, { setComponentsSelector } from '../jsonReact/componentsSelector'
 import TypeManager, { makeTypeManager } from '../jsonReact/TypeManager'
-import HelloWorld from '../components/HelloWorld'
-import Test from '../components/Test'
-import List from '../components/List'
-import Item from '../components/Item'
-import Link from '../components/Link'
+
+import HelloWorld from './components/HelloWorld'
+import Test from './components/Test'
+import List from './components/List'
+import Item from './components/Item'
+import Link from './components/Link'
 import './utils'
 
 import jsonTest1 from './jsons/test1.json'

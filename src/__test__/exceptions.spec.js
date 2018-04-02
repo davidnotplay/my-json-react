@@ -1,11 +1,11 @@
 import { mount } from 'enzyme'
 import start from '../jsonReact'
 
-import HelloWorld from '../components/HelloWorld'
-import Test from '../components/Test'
-import List from '../components/List'
-import Item from '../components/Item'
-import Link from '../components/Link'
+import HelloWorld from './components/HelloWorld'
+import Test from './components/Test'
+import List from './components/List'
+import Item from './components/Item'
+import Link from './components/Link'
 import './utils'
 
 const allComponents = { Test, HelloWorld, Link, Item, List }
