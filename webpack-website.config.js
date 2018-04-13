@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = env => {
 
@@ -55,7 +56,8 @@ module.exports = env => {
 
     plugins: [
       new HtmlWebpackPlugin({ template: './index.html'}),
-      new ExtractTextPlugin('style.[sha256:contenthash:hex:6].css')
+      new ExtractTextPlugin('style.[sha256:contenthash:hex:6].css'),
+      new CleanWebpackPlugin(['docs'])
     ],
 
     resolve: {
@@ -63,8 +65,8 @@ module.exports = env => {
     },
 
     devServer: {
+    },
 
-    }
-
+    mode: env.debug ? 'development' : 'production'
   }
 }

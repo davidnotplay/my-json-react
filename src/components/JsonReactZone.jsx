@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, Button } from '@blueprintjs/core'
 import { IconNames } from '@blueprintjs/icons'
 
-import start from '../jsonReact'
+import start from '../MyJsonReact'
 import Selector from './Selector'
 import JsonDialog from './JsonDialog'
 import ErrorComponent from './ErrorComponent'
@@ -66,7 +66,7 @@ class JsonReactZone extends React.Component {
   render() {
     return (
       <div className="json-react-zone">
-        <h2>My React JSON examples</h2>
+        <h2>My JSON react examples</h2>
         <br/>
         <Selector onSelect={ this.onSelectJson }/>
         <JsonDialog

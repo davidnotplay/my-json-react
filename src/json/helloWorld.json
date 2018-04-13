@@ -2,7 +2,7 @@
   "component": "HelloWorld",
   "props": {
     "name": {
-      "value": "My React JSON"
+      "value": "My JSON React"
     },
     "link": {
       "value": "#"

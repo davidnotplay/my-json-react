@@ -1,6 +1,7 @@
-/**
- * Json React.
+/**!
+ * My JSON React.
  * @author David Casado <dcasadomartinez@gmail.com>
+ * @license MIT
  */
 import React from 'react'
 import isPlainObject from 'is-plain-object'

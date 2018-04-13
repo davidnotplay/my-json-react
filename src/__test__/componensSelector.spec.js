@@ -1,6 +1,6 @@
 import ComponentsSelector, {
   setComponentsSelector, getComponentsSelector
-}  from '../jsonReact/componentsSelector'
+}  from '../MyJsonReact/componentsSelector'
 import './utils'
 
 test('Test the class ComponentsSelector', () => {

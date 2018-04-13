@@ -1,5 +1,5 @@
 import { mount } from 'enzyme'
-import start from '../jsonReact'
+import start from '../MyJsonReact'
 
 import HelloWorld from './components/HelloWorld'
 import Test from './components/Test'

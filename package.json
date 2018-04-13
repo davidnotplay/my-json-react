@@ -1,11 +1,12 @@
 {
-  "name": "json-react",
+  "name": "my-json-react",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/myJsonReact.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack-website.config.js --env.debug=true",
-    "build:website": "webpack --config webpack-website.config.js --env.debug=false",
+    "dev": "webpack-dev-server --config webpack-website.config.js --env.debug=1",
+    "build:website": "webpack --config webpack-website.config.js --env.debug=0",
+    "build:lib": "webpack --config webpack.config.js --env.debug=0",
     "test": "jest --watch --env=jsdom"
   },
   "author": "",
@@ -20,6 +21,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-15": "^1.0.5",

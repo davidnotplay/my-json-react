@@ -1,6 +1,6 @@
 import
 TypeManager,
-{ makeTypeManager, getTypeManager, resetTypeManager } from '../jsonReact/TypeManager'
+{ makeTypeManager, getTypeManager, resetTypeManager } from '../MyJsonReact/TypeManager'
 import './utils'
 
 class DummyTypeManager extends TypeManager {

@@ -2,9 +2,9 @@ import React from 'react'
 import { mount } from 'enzyme'
 import generateComponent, {
   getComponent, getProps, getChildren
-}  from '../jsonReact/generateReactComponent'
-import ComponentsSelector, { setComponentsSelector } from '../jsonReact/componentsSelector'
-import TypeManager, { makeTypeManager } from '../jsonReact/TypeManager'
+}  from '../MyJsonReact/generateReactComponent'
+import ComponentsSelector, { setComponentsSelector } from '../MyJsonReact/componentsSelector'
+import TypeManager, { makeTypeManager } from '../MyJsonReact/TypeManager'
 
 import HelloWorld from './components/HelloWorld'
 import Test from './components/Test'

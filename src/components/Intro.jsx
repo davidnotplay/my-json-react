@@ -9,7 +9,7 @@ class Intro extends React.Component {
     return (
       <div className="intro-wrapper">
         <img src={ reactLogo } className="logo"/>
-        <h1>My React JSON</h1>
+        <h1>My JSON React</h1>
         <AnchorButton
           text="Github"
           href="#"
