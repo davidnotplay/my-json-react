@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack-dev.config.js --env.prod=0",
+    "dev": "webpack-dev-server --config webpack-dev.config.js --env.debug=true",
     "test": "jest --watch --env=jsdom"
   },
   "author": "",
@@ -13,10 +13,13 @@
     "is-plain-object": "^2.0.4"
   },
   "devDependencies": {
+    "@blueprintjs/core": "^2.1.1",
+    "@blueprintjs/icons": "^2.1.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-15": "^1.0.5",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -28,10 +31,18 @@
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.0.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
     "jest": "^22.4.3",
+    "node-sass": "^4.8.3",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
+    "react-json-view": "^1.16.1",
     "react-test-renderer": "^15.6.2",
+    "react-transition-group": "^2.3.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "^3.1.1"

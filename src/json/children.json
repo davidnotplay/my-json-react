@@ -1,0 +1,29 @@
+{
+  "component": "Children",
+  "children": [
+    {
+      "component": "Text",
+      "props": {
+        "text": {
+          "value": "child 1"
+        }
+      }
+    },
+    {
+      "component": "Text",
+      "props": {
+        "text": {
+          "value": "child 2"
+        }
+      }
+    },
+    {
+      "component": "Number",
+      "props": {
+        "number": {
+          "value": 1
+        }
+      }
+    }
+  ]
+}
