@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack-dev.config.js --env.debug=true",
+    "dev": "webpack-dev-server --config webpack-website.config.js --env.debug=true",
+    "build:website": "webpack --config webpack-website.config.js --env.debug=false",
     "test": "jest --watch --env=jsdom"
   },
   "author": "",
