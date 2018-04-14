@@ -1,7 +1,8 @@
-./node_modules/*
-./src/*
-./docs/*
-./webpack*
+node_modules
+src
+docs
+webpack-website.config.js
+webpack.config.js
 index.html
 .gitignore
 .babelrc
