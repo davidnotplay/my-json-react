@@ -10,6 +10,7 @@ import { makeTypeManager } from './TypeManager'
 import generateReactComponent from './generateReactComponent'
 import ErrorComponent from './ErrorComponent'
 import JsonReactException from './JsonReactException'
+import TypeManager from './TypeManager'
 
 
 /**
@@ -72,3 +73,4 @@ function start(jsonData, components, options={}) {
 }
 
 export default start
+export { TypeManager }

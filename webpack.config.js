@@ -7,13 +7,11 @@ module.exports = env => {
   return {
     entry: {
       myJsonReact: './src/MyJsonReact/index.jsx',
-      TypeManager: './src/MyJsonReact/TypeManager.js'
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: '[name].js',
       library: 'myJsonReact',
-      libraryExport: 'default',
       libraryTarget: 'umd'
     },
 
