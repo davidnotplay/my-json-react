@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import start from '../MyJsonReact'
+import start, { TypeManager as indexTypeManager } from '../MyJsonReact'
 import { getComponentsSelector } from '../MyJsonReact/componentsSelector'
 import TypeManager from '../MyJsonReact/TypeManager'
 import ErrorComponent from '../MyJsonReact/ErrorComponent'
@@ -119,4 +119,9 @@ describe('Error component', () => {
     let wrapper = mount(start(jsonData, allComponents, { errorComponent: CustomError }))
     expect(wrapper.type()).toBe(CustomError)
   })
+})
+
+
+test('Export index TypeManager', () => {
+  expect(TypeManager).toEqual(indexTypeManager)
 })
