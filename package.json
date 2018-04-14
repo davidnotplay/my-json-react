@@ -1,7 +1,7 @@
 {
   "name": "my-json-react",
   "version": "0.0.1",
-  "description": "",
+  "description": "Transform a plain javascript object or json string in a react component.",
   "main": "dist/myJsonReact.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack-website.config.js --env.debug=1",
@@ -9,8 +9,20 @@
     "build:lib": "webpack --config webpack.config.js --env.debug=0",
     "test": "jest --watch --env=jsdom"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "David Casado <dcasadomartinez@gmail.com> (http://buhoprogramador.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidnotplay/my-json-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidnotplay/my-json-react/issues"
+  },
+  "keywords": [
+    "react", "json", "render", "library"
+  ],
+  "homepage": "https://davidnotplay.github.io/my-json-react",
+  "contributors": [],
   "dependencies": {
     "is-plain-object": "^2.0.4"
   },
