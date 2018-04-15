@@ -100,7 +100,7 @@ Javascript object or json string with the data they will be used to create the R
 * `component (string)`: Is the name of you react component. This should be defined previously in the object `components` of the function.
 * `props (object optional)`: Object with the component properties. Each object key is the property name and the object value is another object with:
   * `value` Property value.
-  * `type (string optional)`. Property type. You can define and use custom types. See [TypeManager](#typemanager) class for more info.
+  * `type (string optional)`. Property type. You can define and use custom types. See [TypeManager](#class-typemanager) class for more info.
 
 * `children (object|array optional)`
   - If is a object, this must replicate the main structure again (`component`, `props`, `children`)
@@ -113,7 +113,7 @@ List with all components that you wan use in the json files. The object keys is 
 * `errorComponent (ReactComponent)` React component to customize the possible exceptions generate by the function. This error component has one property `exception`, that has the exception object.
 
 * `typeManager (TypeManager)` Object to define the custom type for the properties.
-See [TypeManager](#typemanager) class for more info.
+See [TypeManager](#class-typemanager) class for more info.
 
 
 
