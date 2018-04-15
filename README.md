@@ -97,10 +97,10 @@ Javascript object or json string with the data they will be used to create the R
 }
 ```
 
-* `component (string)`: Is the name of you react component. This should be defined previously in the object component of the function.
+* `component (string)`: Is the name of you react component. This should be defined previously in the object `components` of the function.
 * `props (object optional)`: Object with the component properties. Each object key is the property name and the object value is another object with:
   * `value` Property value.
-  * `type (string optional). Property type. You can define and use custom types. See typeManager option.
+  * `type (string optional)`. Property type. You can define and use custom types. See [TypeManager](#typemanager) class for more info.
 
 * `children (object|array optional)`
   - If is a object, this must replicate the main structure again (`component`, `props`, `children`)
@@ -113,6 +113,10 @@ List with all components that you wan use in the json files. The object keys is 
 * `errorComponent (ReactComponent)` React component to customize the possible exceptions generate by the function. This error component has one property `exception`, that has the exception object.
 
 * `typeManager (TypeManager)` Object to define the custom type for the properties.
+See [TypeManager](#typemanager) class for more info.
+
+
+
 
 #### Example
 ```js
@@ -176,6 +180,12 @@ const jsonRendered = start(jsonObject, componentList, options);
 You can define new property types using this class.
 It is usefull to customize the react component properties.
 
+To make new property types. First it make a class that extends of the class `TypeManager`.
+In this new class you make methods with the name of the property types. This methods recive
+the parameter `value` that is the key `value` in the object `props` of the json object;
+and return the react property value. Finally you add an instance of the class in the
+[options](#object-options) of the function `myJsonReact`.
+
 #### How define new types. Example
 ```js
 import myJsonReact, { TypeManager } from 'my-json-react'
@@ -184,8 +194,7 @@ const DummyComponent = props => <div>{ props.name }</div>
 
 // make custom class with the types.
 class CustomTypeManager extends TypeManager {
-  // make methods with the type names.
-  // dummy example.
+  // Make methods with the type names.
   toLower(value) {
     return value.toLowerCase();
   }
@@ -212,6 +221,8 @@ const jsonObject = {
 }
 
 const listComponents = { ComponentTest1 }
+
+// Make the option typeManager, that is an instance of the class CustomTypeManager.
 const options = { typeManager: new CustomTypeManager() }
 
 const componentRendered = myJsonReact(jsonObject, listComponents, options)

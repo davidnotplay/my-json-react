@@ -1,7 +1,7 @@
 import React from 'react'
 
 // json files.
-import helloWorldJson from '../json/helloWorld.json'
+import helloWorldJson from '../json/helloWorld.js'
 import children from '../json/children.json'
 import performance from '../json/performance'
 
